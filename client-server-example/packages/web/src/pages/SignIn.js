@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Entrar - Exemplo de Cliente /Servidor</title>
-</head>
-<body>
+import React from 'react';
+
+export default function SignIn() {
+  return (
 
 	<form action="/authenticate" method="POST">
 		<fieldset>
@@ -19,5 +14,10 @@
 		</fieldset>
 		<button type="submit">Entrar</button>
 	</form>
-</body>
-</html>
+
+	);
+}
+
+
+
+	
