@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server-express';
 
+import { typeDefs as nodeTypeDef } from './Node/Node';
 import { typeDefs as clientTypeDefs } from './Client/Client';
 import { typeDefs as demandTypeDefs } from './Demand/Demand';
 
@@ -9,6 +10,7 @@ const typeDefs = gql`
         _root: String
     }
 
+    ${nodeTypeDef}
     ${clientTypeDefs}
     ${demandTypeDefs}
 
