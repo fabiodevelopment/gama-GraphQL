@@ -5,7 +5,7 @@
   "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon -r esm .",
+    "dev": "nodemon -r esm .",
     "start": "node -r esm ."
   },
   "author": "",
@@ -18,6 +18,12 @@
     "apollo-server-express": "2.13.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.1",
+    "uuid": "^8.3.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/data/*"
+    ]
   }
 }
